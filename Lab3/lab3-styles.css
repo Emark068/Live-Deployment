@@ -1,0 +1,47 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: green;
+    font-size: 16px;
+}
+.my-box {
+    /* 1. The Border: thickness, style, and color */
+    border: 2px solid #333;
+
+    /* 2. Padding: space INSIDE the border (between text and border) */
+    padding: 20px;
+
+    /* 3. Margin: space OUTSIDE the border (pushes other elements away) */
+    margin: 30px;
+
+    /* Optional: making it look a bit nicer */
+    background-color: white;
+    width: 200px;
+}
+body {
+    /* This creates a smooth blend from pinkish-orange to a light peach */
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    
+    /* We add min-height to ensure the gradient covers the whole screen 
+       even if there isn't much text on the page */
+    min-height: 100vh;
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+}
+
+/* Keeping your other styles from before */
+p {
+    color: green;
+    font-size: 16px;
+}
+
+.my-box {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 30px;
+    background-color: white; /* White box looks great against a gradient! */
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="lab2-styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>22/EG/CO/1720</h1>
+        <h1>Student Profile</h1>
+    </header>
+
+    <section>
+        <!-- Use a relative path when uploading to GitHub -->
+        <img src="profile.jpg" alt="Profile Picture" width="200">
+
+        <table border="2">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Major</th>
+                <th>Reg</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>Mark Enimini</td>
+                <td>20</td>
+                <td>Computer Engr.</td>
+                <td>22/EG/CO/1720</td>
+                <td>eniminimark2022@gmail.com</td>
+                <td>07046430039</td>
+            </tr>
+        </table>
+    </section>
+
+    <br>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="subscribe">
+            Subscribe to newsletter
+        </label>
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <p>© 2026 Student Profile</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+.container {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1opx;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Responsive Design: For screens smaller than 600px */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    
+    /* This makes the hover effect smooth (0.3 seconds) */
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+/* --- THE HOVER EFFECT --- */
+.item:hover {
+    background-color: #ff7e5f; /* Changes color to match your gradient! */
+    color: white;              /* Changes text color */
+    transform: translateY(-5px); /* Lifts the box up slightly */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds a 3D shadow */
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes Logo and Links apart */
+    align-items: center;        /* Centers items vertically */
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;             /* Makes the list horizontal */
+    list-style: none;          /* Removes bullet points */
+}
+
+.nav-links li {
+    margin-left: 20px;         /* Adds space between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;     /* Removes underlines */
+    font-family: Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff7e5f;            /* Highlights on hover */
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stacks Logo above Links */
+        text-align: center;
+    }
+    
+    .nav-links {
+        margin-top: 10px;
+        flex-direction: column; /* Stacks links vertically */
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+    }
+}

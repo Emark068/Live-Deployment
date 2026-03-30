@@ -1,0 +1,27 @@
+body { 
+    font-family: sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin: 5px; padding: 5px; background: #eee;
+}
+/* Activity 3: Class to handle hiding elements */
+.hidden {
+    display: none;
+}
+
+/* General styling to make the lab easier to see */
+.box {
+    width: 200px;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 10px 0;
+}
+
+#displayDiv {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
